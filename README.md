@@ -4,7 +4,7 @@ The starter package for 15719/18709 (Spring 2019) Project 2, part 2.
 - `get_WARC_dataset.sh` is a script to download Common Crawl data into HDFS. It takes one parameter, which is the number of first WET files to download. This script streamlines the downloading process.
 - `submit` is used to run test for grading and submit your solution. Run it as `./submit <code-path> <test-id> <data-path> <data-file-names> <stop-words-file>`, the arguments are:
   - <code-path> is the local directory that contains your driver program and the `run.sh` script. It should contain nothing else.
-  - <test-id> is the single letter (A, B, C, D, or E) that identifies each test case described above. Please make sure the number of slave instances match the test specification or your grading will fail.
+  - <test-id> is the single letter (A, B, C, or D) that identifies each test case described above. Please make sure the number of slave instances match the test specification or your grading will fail.
   - <data-path> is the path in HDFS under which the WET files for testing are stored.
   - <data-file-names> is the file that contains the names of the WET files to be processed.
   - <stop-words-files> is the path to the stop-words file.
