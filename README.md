@@ -8,3 +8,21 @@ The starter package for 15719/18709 (Spring 2019) Project 2, part 2.
   - <data-path> is the path in HDFS under which the WET files for testing are stored.
   - <data-file-names> is the file that contains the names of the WET files to be processed.
   - <stop-words-files> is the path to the stop-words file.
+- Make sure to periodically pull updates.
+
+## Pulling starter updates
+1. Add the student common starter code repository as a remote (needs to be done only once):
+    ```
+    $ git remote add starter git@github.com:cmu15719/p2.2-starter.git
+    ```
+1. Check if there are pending changes:
+    ```
+    $ git fetch starter
+    $ git log master..starter/master
+    ```
+    If the output is not empty - there are pending changes you need to pull.
+1. Pull from the student common starter code repository:
+    ```
+    $ git pull starter master
+    ```
+1. Resolve potential conflicts by merging
